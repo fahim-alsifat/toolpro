@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Useful Tools</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">ToolBox</div>
+            <ul class="nav-links">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#tools">Tools</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Welcome to ToolBox</h1>
+            <p>Your one-stop destination for useful online tools</p>
+        </section>
+
+        <section id="tools" class="tools-grid">
+            <div class="tool-card" onclick="openTool('calculator')">
+                <i class="fas fa-calculator"></i>
+                <h3>Calculator</h3>
+                <p>Basic & Scientific Calculator</p>
+            </div>
+            <div class="tool-card" onclick="openTool('unitConverter')">
+                <i class="fas fa-exchange-alt"></i>
+                <h3>Unit Converter</h3>
+                <p>Convert between different units</p>
+            </div>
+            <div class="tool-card" onclick="openTool('textTools')">
+                <i class="fas fa-font"></i>
+                <h3>Text Tools</h3>
+                <p>Text manipulation utilities</p>
+            </div>
+            <div class="tool-card" onclick="openTool('colorPicker')">
+                <i class="fas fa-palette"></i>
+                <h3>Color Picker</h3>
+                <p>Pick and convert colors</p>
+            </div>
+        </section>
+
+        <div id="toolModal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <div id="toolContent"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 ToolBox. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
